@@ -1,0 +1,12 @@
+fun main(args: Array<String>)
+{
+  var sentence:String = "my name is devi, I am studying in 10th."
+    println("Hello, $sentence")
+    //remove special chracters
+    var strArray=sentence.replace(Regex("[^a-zA-Z0-9\\s]"),"")
+    println(strArray)
+    //split with white spaces
+    var str=strArray.split("\\s+".toRegex())
+    println(str.size)
+  //in kotlin we cannot check with if(contains white space) if(strArray)
+}
