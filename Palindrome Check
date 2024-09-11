@@ -1,0 +1,19 @@
+fun main(args: Array<String>) {
+var no=153
+var n=no
+var i=1
+var d=0
+var p=0
+for(i in 1..no)
+{
+  d=no%10
+  p=p+d*d*d
+  no=no/10
+  if(p==n)
+    break
+}
+    if(p==n)
+    println("palindrome")
+    else
+    println("not")
+}
